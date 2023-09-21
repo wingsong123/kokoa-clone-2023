@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends - Kokoa Clone</title>
+  </head>
+  <body>
+    <!--BEM방식 사용-->
+    <!-- 스테이터스 바 기능 구현 -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+        <!--와이파이 아이콘 추가 완료-->
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fa-solid fa-battery-full fa-lg"></i>
+        <!--배터리 아이콘 크기 조정(더 크게) 완료-->
+        <i class="fa-solid fa-bolt"></i>
+        <!--충전중 아이콘 추가 완료-->
+      </div>
+    </div>
+
+    <!--네비게이션 목록-->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <!-- 아이콘 사용 fa-lg는 아이콘 더 크게 만들어줌 -->
+          <a class="nav__link" href="friends.html"
+            ><i class="fa-solid fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="#"
+            ><i class="fa-regular fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="#"
+            ><i class="fa-solid fa-magnifying-glass fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="#"
+            ><i class="fa-solid fa-ellipsis fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--아이콘 라이브러리 사용-->
+    <script
+      src="https://kit.fontawesome.com/8319d892a9.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
