@@ -1,0 +1,57 @@
+.Welcome-header{
+    margin: 90px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+}
+.Welcome-header__title{
+    margin-bottom: 20px;
+    font-size:25px;
+}
+
+.Welcome-header__texte{
+    width: 33%; /*글자 줄 제한*/
+    opacity: 0.7;/*글자 색깔 회색으로 변경*/
+}
+
+#login-form{
+    display: flex;
+    flex-direction: column; /*로그인 폼 밑으로 정렬*/
+    margin: 0px 30px; /*로그인 폼 양옆에 공백 넣어주기*/
+}
+
+#login-form input{
+    border: none; /*경계선 없애기 */
+    padding:15px 0px; /*로그인 칸 위 아래 범위 넓히기*/
+    font-size: 18px;
+    margin-bottom: 25px; /*인풋칸 밑에 공백 추가*/
+}
+#login-form input:not([type="submit"]){/*이 것을 제외한 나머지에 적용하고 싶어요*/
+    border-bottom:1px solid rgba(0, 0, 0, 0.4);/*밑에 밑줄(밑 경계선) 넣어주기*/
+    transition: border-color .3s ease-in-out;/*애니메이션 효과 추가*/
+}
+
+#login-form input::placeholder{/*입력필드에 표시되어 있는 텍스트 조정(플레이스 홀더)*/
+    color: rgba(0, 0, 0, 0.4);/* 글자를 더 연한 회색으로 설정*/
+}
+#login-form input:focus{
+    /* 클릭하면 밑줄이 노란색으로 설정되게끔*/
+    /*variables 파일에 있는 사용자 지정 변수 사용*/
+    border-color: var(--yellow);
+}
+
+#login-form input[type="submit"]{/*인풋타입중 버튼타입만 정의*/
+    background-color: var(--yellow);
+    cursor: pointer;/*커서 올릴때 클릭하는 표시(포인터)로 보이게 설정*/
+    padding: 20px 0px; /*버튼 세로로 넓히기*/
+    border-radius: 7px;/*모서리를 둥글게 만들기*/
+}
+
+#login-form a{ /*링크의 설정값*/
+    text-align: center;
+    text-decoration: none;/*기본 밑줄 제거*/
+    color: inherit;/*부모 색을 상속받음(기본이 검정이므로 검정이 됨)*/
+    font-size: 15px;
+}
