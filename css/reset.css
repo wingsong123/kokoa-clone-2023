@@ -41,3 +41,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+input:focus{ /*(모든 인풋에 적용)클릭 했을 때 아웃라인표시가 안나게 설정*/
+	outline: none;
+}
+
+a{
+	color:inherit;
+	text-decoration: none;
+}
