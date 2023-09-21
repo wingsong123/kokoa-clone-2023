@@ -3,26 +3,17 @@
 /*이 파일은 css 통합 파일이다.*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Yellowtail&display=swap');
 @import "reset.css";
-@import "status-bar.css";
+@import "variables.css";
+/*Components(요소)*/
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+/* Screens(화면) */
+@import "screens/login.css";
 body{
     /* 상단 import 문과 연계해서 폰트지정*/
+ /*이 파일은 통합파일이므로, 모든 스크린에
+ 적용될수 있는 스타일만을 정의한다*/
     font-family: 'Open Sans', sans-serif;
+    height: 1000vh; /*화면길이를 길게 설정*/
 }
 
-.Welcome-header{
-    margin: 90px 0px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: 600;
-}
-.Welcome-header__title{
-    margin-bottom: 20px;
-    font-size:25px;
-}
-
-.Welcome-header__texte{
-    width: 60%; /*글자 줄 제한*/
-    opacity: 0.7;/*글자 색깔 회색으로 변경*/
-}
