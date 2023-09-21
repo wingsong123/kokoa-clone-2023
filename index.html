@@ -26,6 +26,7 @@
         <!--충전중 아이콘 추가 완료-->
       </div>
     </div>
+
     <!-- 헤더 부분 기능 구현 -->
     <header class="Welcome-header">
       <h1 class="Welcome-header__title">코코아 톡에 온걸 환영합니다!</h1>
@@ -33,15 +34,18 @@
         만약 코코아 계정에 로그인 하려면, 이메일과 비밀번호를 입력해주세요.
       </p>
     </header>
+
     <!-- 로그인 관련 기능 구현 -->
-    <form id="login-form">
-      <input type="text" placeholder="Email or phone number" />
-      <input type="password" placeholder="Password" />
+    <!--form에서 액션은 도착장소, 메소드는 교통수단-->
+    <form action="friends.html" method="get" id="login-form">
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="Password" />
       <input type="submit" value="Log In" />
       <a href="#">아이디나 비밀번호 찾기</a>
       <!--링크는 많아서 고유 아이디를 주기보다는 폼안에 넣어서 사용-->
     </form>
 
+    <!--아이콘 라이브러리 사용-->
     <script
       src="https://kit.fontawesome.com/8319d892a9.js"
       crossorigin="anonymous"
